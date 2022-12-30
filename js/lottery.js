@@ -11,11 +11,11 @@ function changeNumber() {
   }
 }
 
+//This function sets the number being displayed to a random number between 1 and 100000 for 20 intervals before finally landing on a number and calling HandleWinLost
 function setNumber() {
   number = Math.round(Math.random() * (100000 - 1) + 1);
   numberDisplay.textContent = `Your Number: ${number}`;
   changes++;
-  console.log(changes);
 
   if (changes == 20) {
     clearInterval(intervalId);
@@ -25,6 +25,7 @@ function setNumber() {
   }
 }
 
+//This function alerts the user to whether they have won or loss, then resets the necessary variables in order to play again once the alert box is closed.
 function HandleWinLost() {
   if (number >= 1000) {
     alert("Too bad! You've lost!");

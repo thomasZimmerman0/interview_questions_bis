@@ -1,0 +1,45 @@
+.main-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.componenets-container{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.componenets-container h1{
+    margin-top: 1%;
+    margin-bottom: 10%;
+    font-size: 40px;
+}
+
+.componenets-container h2{
+    font-size: 30px;
+}
+
+.componenets-container h3{
+    font-size: 25px;
+}
+
+.componenets-container button{
+    border: 0;
+    font-size: 20px;
+    padding: 8% 13% 8% 13%;
+    outline: 1px solid gray;
+}
+
+.componenets-container p{
+    font-size: 20px;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.componenets-container button:hover{
+    cursor: pointer;
+    background-color: rgb(135, 241, 255);
+    outline-color: rgb(4, 121, 255);
+}

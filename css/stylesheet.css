@@ -1,0 +1,118 @@
+
+.main-container{
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elements-container {
+    height: 98%;
+    width: 98%;
+    outline: black solid 5px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.element{
+    width: 100%;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.one{
+    border-right: black 5px solid;
+
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-name: shiftcolors;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shiftcolors {
+    from {
+        background-color: blue;
+        color: white;
+    }
+    to {
+        background-color: rgb(255, 213, 0);
+        color: black;
+    }
+}
+
+.two{
+    background-color: white;
+    border-right: black 5px solid;
+}
+
+.two span{
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.three{
+    background-color: blue;
+    position: relative;
+}
+
+.three span{
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: slidefromtoptobottom;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes slidefromtoptobottom {
+    from {
+        color: white;
+        top: 10%;
+    }
+
+    10%{
+        color: white;
+        top: 10%;
+    }
+
+    35% {
+        color: black;
+        top: 45%;
+    }
+
+    75% {
+        color: white;
+        top: 80%;
+    }
+
+    85% {
+        color: black;
+    }
+
+    to{
+        color:white;
+        top: 10%;
+    }
+}
